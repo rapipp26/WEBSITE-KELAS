@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0d1619;
+    text-decoration: none;
+}
+
+.logo {
+    width: 75px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border-style: unset;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 99999;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+.nav_links li a:hover {
+    color:#c88937;
+    border-bottom: 1px solid #c88937;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: #c88937;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #d3a05f;
+}
+
+.h2-marketday {
+    display: flex;
+    align-items: center;
+}
+
+.h2-marketday h2 {
+    margin: 2rem 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h2-marketday button {
+    padding: 9px 25px;
+    background-color: #c88937;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.h2-marketday button:hover {
+    background-color: #d3a05f;
+}
+
+.pictures-containter {
+    overflow: hidden;
+    display: flex;
+}
+
+.pictures { 
+    display: flex;
+    flex-shrink: 0;
+    gap: 1rem;
+    animation: infinite-scroll 20s linear infinite;
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.jpsomedia {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.jpsomedia div {
+    margin-top: 1rem;
+}
